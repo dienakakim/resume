@@ -1,6 +1,6 @@
 # Dien Tran's resume
 
-My most up-to-date resume, built with HTML5, Vue, and Tailwind CSS.
+My resume, built with HTML5, Vue, and Tailwind CSS.
 
 ## How to build
 
