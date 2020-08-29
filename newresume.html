@@ -5,7 +5,7 @@
 <html>
 
 <head>
-  <title>New Resume</title>
+  <title>resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css">
   <style>
@@ -47,7 +47,7 @@
             Dien Kim Tran
           </div>
         </div>
-        <div class="w-1/2 mt-2">
+        <div class="w-1/2 mt-1">
           <div class="flex flex-col font-quicksand text-sm">
             <p>
               <span class="font-bold">Email:</span> dien.kim.tran@utdallas.edu
@@ -59,9 +59,6 @@
               <span class="font-bold">Website:</span> <a class="italic hover:underline"
                 href="https://www.dienakakim.net">https://www.dienakakim.net</a>
             </p>
-            <p>
-              <span class="font-bold">Computer Science</span> Major, <span class="font-bold">Mathematics</span> Minor
-            </p>
           </div>
         </div>
 
@@ -70,29 +67,55 @@
 
       <hr class="mt-4 border-2 border-purple-700 rounded-full">
 
-      <!-- Educational experience -->
-      <h1 class="uppercase text-2xl font-quicksand font-bold mt-2">Educational experience</h1>
+      <!-- Objectives -->
+      <div id="objectives">
+        <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Objectives</h1>
+        <ul>
+          <li class="mt-1">
+            - Currently seeking an internship as Software Engineer in <span class="italic">SQL/NoSQL databases</span>
+            such
+            as <span class="italic">PostgreSQL</span> or <span class="italic">MongoDB</span> and <span
+              class="italic">front-end web UI design</span>
+          </li>
+          <li class="mt-1">
+            - Seeking experience in <span class="italic">database administration</span> (DBA), <span
+              class="italic">full-stack web development</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Education</h1>
       <div class="font-lato">
 
         <ul>
           <!-- Universities attended -->
           <li class="flex">
-            <span class="text-left w-10/12">- B.S. in Computer Science at the University of Texas at
+            <span class="text-left w-10/12">- B.S. in <span class="font-bold">Computer Science</span>, Minor in <span
+                class="font-bold">Mathematics</span> at the University of Texas
+              at
               Dallas</span><span class="text-right w-2/12 font-bold">(2018 - 2022)</span>
           </li>
+          <div class="text-xs ml-2 italic">
+            <li>
+              Cumulative GPA: 3.967. <span class="font-bold">Dean's List</span> for Spring 19, Fall 19
+            </li>
+            <li>
+              Recipient of <span class="font-bold">Academic Excellence Scholarship</span> (AES), Distinction level
+            </li>
+          </div>
+        </ul>
 
-          <!-- Course list -->
-          <div id="course-list mt-2">
-            - Courses taken/being taken:
-            <li class="text-xs">
+        <!-- Course list -->
+        <div id="relevant-courses">
+          <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Relevant courses</h1>
+          <div id="course-list" class="mt-1">
+            <div class="text-xs">
               <div class="mt-1">
-                <div class="flex text-center font-bold">
+                <div class="flex align-left font-bold">
                   <div class="flex-col w-1/4">
                     <div>
                       Calculus I, II & III
-                    </div>
-                    <div>
-                      Physics I & II
                     </div>
                     <div>
                       Data Structures & Algorithms
@@ -106,12 +129,6 @@
                   </div>
                   <div class="flex-col w-1/4">
                     <div>
-                      Introduction to Proofs
-                    </div>
-                    <div>
-                      Linear Algebra
-                    </div>
-                    <div>
                       Computer Architecture
                     </div>
                     <div>
@@ -120,11 +137,11 @@
                     <div>
                       Numerical Analysis
                     </div>
+                    <div>
+                      Prof. & Tech. Comm.
+                    </div>
                   </div>
                   <div class="flex-col w-1/4">
-                    <div>
-                      Number Theory
-                    </div>
                     <div>
                       Probability and Statistics
                     </div>
@@ -135,7 +152,7 @@
                       Automata Theory
                     </div>
                     <div>
-                      Prof. & Tech. Comm.
+                      Compiler Design
                     </div>
                   </div>
                   <div class="flex-col w-1/4">
@@ -143,58 +160,53 @@
                       Discrete Math I & II
                     </div>
                     <div>
+                      Linear Algebra
+                    </div>
+                    <div>
                       Computer Science I & II
                     </div>
                     <div>
                       Database Systems
                     </div>
-                    <div>
-                      Compiler Design
-                    </div>
                   </div>
                 </div>
               </div>
-            </li>
+            </div>
           </div>
+        </div>
 
-          <!-- GPA, academic awards-->
-          <li class="mt-2">
-            - Cumulative GPA: 3.967. <span class="font-bold">Dean's List</span> for Spring 19, Fall 19
-          </li>
-        </ul>
-
-        <!-- Skills and proficiencies -->
-        <div id="skills-and-proficiencies">
-          <h1 class="uppercase text-2xl font-quicksand font-bold mt-1">Skills and proficiencies</h1>
+        <!-- Skills -->
+        <div id="skills">
+          <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Skills</h1>
           <ul>
             <li>
-              - Proficient in C++, Java, Python, and Go for <span class="italic">application development</span>, and
-              HTML5, CSS, and JavaScript (ES6) for <span class="italic">web development</span>
+              - <span class="font-bold">Programming languages</span>: C/C++, Java, Python, Go, HTML5, CSS, and
+              JavaScript
             </li>
-            <li class="mt-2">
-              - Experience in using <span class="italic">web technologies</span>: Node.js, Vue.js, Svelte, Bootstrap
-              and
-              Tailwind CSS for
-              front-end web development
-              <!-- <span class="italic">(hint: this resume is made with Vue and Tailwind!)</span> -->
+            <li class="mt-1">
+              - <span class="font-bold">Software frameworks</span>: Node.js, Vue.js, Svelte, Bootstrap and
+              Tailwind CSS; PostgreSQL, MongoDB
             </li>
-            <li class="mt-2">
-              - Fluent in <span class="italic">graphic design</span>, <span class="italic">photo editing</span>, <span
-                class="italic">video editing</span> and <span class="italic">compositing</span> with the Adobe software
+            <li class="mt-1">
+              - <span class="font-bold">Digital design skills</span>: Graphic design, photo editing, video editing and
+              compositing with the Adobe software
               suite
             </li>
-            <li class="mt-2">
-              - Fluent in <span class="italic">Vietnamese</span> (as a native)
+            <li class="mt-1">
+              - <span class="font-bold">Speaking languages</span>: English, Vietnamese (as a native)
             </li>
           </ul>
         </div>
 
         <!-- Activities -->
         <div id="activities">
-          <h1 class="uppercase text-2xl font-quicksand font-bold mt-1">Activities</h1>
+          <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Activities</h1>
           <ul>
-            <li class="mt-2">
-              - Member of <span class="font-bold">UTD Math Club</span>
+            <li class="mt-1 flex">
+              <span class="align-left w-10/12">- Member of <span class="font-bold">UTD Math Club</span></span>
+              <span class="text-right font-bold w-2/12">
+                (2019 - Current)
+              </span>
             </li>
             <li class="text-xs ml-2 italic">
               Every club meeting comes with an assortment of nice math problems and thought experiments, for everyone
@@ -204,9 +216,9 @@
 
         <!-- Projects -->
         <div id="projects">
-          <h1 class="uppercase text-2xl font-quicksand font-bold mt-1">Projects</h1>
+          <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Academic projects</h1>
           <ul>
-            <li class="mt-2">
+            <li class="mt-1">
               - Built a personal blog/website at <a class="italic hover:underline"
                 href="https://dienakakim.net">https://dienakakim.net</a> using Nuxt.js and
               Tailwind CSS -- ongoing project
@@ -214,34 +226,36 @@
             <li class="text-xs ml-2 italic">
               Planned features: database system with PostgreSQL, WYSIWYG blog post system
             </li>
-            <li class="mt-2">
-              - Had hands-on experience working with SQL queries, JDBC and the Hibernate ORM library in class project for CS 4347: Database Systems
+            <li class="mt-1">
+              - Had hands-on experience working with SQL queries, JDBC and the Hibernate ORM library in class project
+              for CS 4347: Database Systems
             </li>
             <li class="text-xs ml-2 italic">
               Class taken during Summer 2020 under Prof. <span class="font-bold">Michael Christiansen</span>
             </li>
+            <li class="mt-1">
+              - <span class="font-mono">mds</span>: A simple server app written in Go that renders Markdown files. Uses
+              Tailwind CSS for styling, and has a dark mode built-in.
+            </li>
+            <li class="text-xs ml-2 italic">
+              <a class="italic hover:underline"
+                href="https://github.com/dienakakim/mds">https://github.com/dienakakim/mds</a>
+            </li>
+            <li class="mt-1">
+              - <span class="font-mono">r6mapbanbackend</span>: A sample backend app written in Go that I wrote to
+              practice communication via HTTP and RESTful APIs.
+            </li>
+            <li class="text-xs ml-2 italic">
+              <a class="italic hover:underline"
+                href="https://github.com/dienakakim/r6mapbanbackend">https://github.com/dienakakim/r6mapbanbackend</a>
+            </li>
           </ul>
         </div>
-
       </div>
-
-      <!-- Academic & career goals -->
-      <h1 class="uppercase text-2xl font-quicksand font-bold mt-2">Academic & career goals</h1>
-      <ul>
-        <li>
-          - Currently seeking an internship as Software Engineer in <span class="italic">SQL/NoSQL databases</span> such
-          as <span class="italic">PostgreSQL</span> or <span class="italic">MongoDB</span> and <span
-            class="italic">front-end web UI design</span>
-        </li>
-        <li class="mt-2">
-          - Seeking experience in <span class="italic">database administration</span> (DBA), <span
-            class="italic">full-stack web development</span>
-        </li>
-      </ul>
     </div>
 
     <!-- Footer -->
-    <div class="text-xs text-center font-lato mt-5">
+    <div class="text-xs text-center font-lato mt-2">
       Dien Kim Tran • <a href="mailto:dien.kim.tran@utdallas.edu"
         class="italic hover:underline">dien.kim.tran@utdallas.edu</a> • {{ currentTime }}.
       <!--  Made with <a
