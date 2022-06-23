@@ -7,7 +7,7 @@
 <head>
   <title>resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
   <style>
     /* Webfonts */
     @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand|Raleway|Lato&display=swap');
@@ -30,10 +30,10 @@
   </style>
 
   <!-- Moment.js -->
-  <script src="https://unpkg.com/moment"></script>
+  <script src="https://unpkg.com/moment@2.29.3"></script>
 
   <!-- Vue.js -->
-  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vue@2.6"></script>
 </head>
 
 <body class="bg-white subpixel-antialiased">
@@ -50,7 +50,7 @@
         <div class="w-1/2 mt-1">
           <div class="flex flex-col font-quicksand text-sm">
             <p>
-              <span class="font-bold">Email:</span> dien.kim.tran@utdallas.edu
+              <span class="font-bold">Email:</span> trandien@amazon.com
             </p>
             <p>
               <span class="font-bold">Phone:</span> (417)-388-7270
@@ -71,16 +71,24 @@
       <div id="objectives">
         <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Objectives</h1>
         <ul>
-          <li class="mt-1">
-            - Currently seeking an internship as Software Engineer in <span class="italic">SQL/NoSQL databases</span>
-            such
-            as <span class="italic">PostgreSQL</span> or <span class="italic">MongoDB</span> and <span
-              class="italic">front-end web UI design</span>
+          <li>
+            - Develop technical and social experience to lead my own software engineering and research projects
           </li>
-          <li class="mt-1">
-            - Seeking experience in <span class="italic">database administration</span> (DBA), <span
-              class="italic">full-stack web development</span>
+        </ul>
+      </div>
+
+      <!-- Work experience -->
+      <div class="font-lato">
+        <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Work experience</h1>
+        <ul>
+          <li class="flex">
+            <span class="text-left w-10/12">- <span class="font-bold">Software Development Engineer I</span> at Amazon.com, Inc. / Whole Foods Market</span><span class="text-right w-2/12 font-bold">(2022 - present)</span>
           </li>
+          <div class="ml-2">
+            <li>
+              • Design and implement more efficient systems for printing and displaying product information in WFM storefronts
+            </li>
+          </div>
         </ul>
       </div>
 
@@ -98,10 +106,7 @@
           </li>
           <div class="text-xs ml-2 italic">
             <li>
-              Cumulative GPA: 3.967. <span class="font-bold">Dean's List</span> for Spring 19, Fall 19
-            </li>
-            <li>
-              Recipient of <span class="font-bold">Academic Excellence Scholarship</span> (AES), Distinction level
+              Cumulative GPA: 3.809. Graduated <span class="font-bold">Cum Laude</span> on May 2022
             </li>
           </div>
         </ul>
@@ -184,8 +189,8 @@
               JavaScript
             </li>
             <li class="mt-1">
-              - <span class="font-bold">Software frameworks</span>: Node.js, Vue.js, Svelte, Bootstrap and
-              Tailwind CSS; PostgreSQL, MongoDB
+              - <span class="font-bold">Software frameworks</span>: Node.js, Vue.js, React.js and
+              Tailwind CSS
             </li>
             <li class="mt-1">
               - <span class="font-bold">Digital design skills</span>: Graphic design, photo editing, video editing and
@@ -205,27 +210,28 @@
             <li class="mt-1 flex">
               <span class="align-left w-10/12">- Member of <span class="font-bold">UTD Math Club</span></span>
               <span class="text-right font-bold w-2/12">
-                (2019 - Current)
+                (2019 - 2022)
               </span>
             </li>
             <li class="text-xs ml-2 italic">
               Every club meeting comes with an assortment of nice math problems and thought experiments, for everyone
             </li>
+            <li class="mt-1 flex">
+              <span class="align-left w-10/12">- Officer of <span class="font-bold">VINCEF at UTD</span> - Vietnamese International Network of Culture, Education and Friendship</span>
+              <span class="text-right font-bold w-2/12">
+                (2021 - 2022)
+              </span>
+            </li>
+            <li class="text-xs ml-2 italic">
+              Vietnamese international student body from Vietnam at UT Dallas. Volunteered as photographer for cultural events
+            </li>
           </ul>
         </div>
 
         <!-- Projects -->
-        <div id="projects">
+        <div id="academic-projects">
           <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Academic projects</h1>
           <ul>
-            <li class="mt-1">
-              - Built a personal blog/website at <a class="italic hover:underline"
-                href="https://dienakakim.net">https://dienakakim.net</a> using Nuxt.js and
-              Tailwind CSS -- ongoing project
-            </li>
-            <li class="text-xs ml-2 italic">
-              Planned features: database system with PostgreSQL, WYSIWYG blog post system
-            </li>
             <li class="mt-1">
               - Had hands-on experience working with SQL queries, JDBC and the Hibernate ORM library in class project
               for CS 4347: Database Systems
@@ -233,21 +239,25 @@
             <li class="text-xs ml-2 italic">
               Class taken during Summer 2020 under Prof. <span class="font-bold">Michael Christiansen</span>
             </li>
+          </ul>
+        </div>
+
+        <div id="personal-projects">
+          <h1 class="uppercase text-xl font-quicksand font-bold mt-1">Personal projects</h1>
+          <ul>
             <li class="mt-1">
-              - <span class="font-mono">mds</span>: A simple server app written in Go that renders Markdown files. Uses
-              Tailwind CSS for styling, and has a dark mode built-in.
+              - Built a personal blog/website at <a class="italic hover:underline"
+                href="https://dienakakim.net">https://dienakakim.net</a> using Next.js; ongoing project
+            </li>
+            <li class="text-xs ml-2 italic">
+              Planned features: RESTful blog post-serving backend
+            </li>
+            <li class="mt-1">
+              - <span class="font-mono">mds</span>: A simple server app written in Go that renders Markdown files.
             </li>
             <li class="text-xs ml-2 italic">
               <a class="italic hover:underline"
                 href="https://github.com/dienakakim/mds">https://github.com/dienakakim/mds</a>
-            </li>
-            <li class="mt-1">
-              - <span class="font-mono">r6mapbanbackend</span>: A sample backend app written in Go that I wrote to
-              practice communication via HTTP and RESTful APIs.
-            </li>
-            <li class="text-xs ml-2 italic">
-              <a class="italic hover:underline"
-                href="https://github.com/dienakakim/r6mapbanbackend">https://github.com/dienakakim/r6mapbanbackend</a>
             </li>
           </ul>
         </div>
@@ -255,7 +265,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="text-xs text-center font-lato mt-2">
+    <div class="text-xs text-center font-lato mt-8">
       Dien Kim Tran • <a href="mailto:dien.kim.tran@utdallas.edu"
         class="italic hover:underline">dien.kim.tran@utdallas.edu</a> • {{ currentTime }}.
       <!--  Made with <a
